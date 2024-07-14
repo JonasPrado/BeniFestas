@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="menu">
+        <header>
+          <h1>Beni<span>Festas</span></h1>
+        </header>
+        <nav>
+          <a class="md" href="./inicio.html">Página inicial</a>
+          <a class="md" href="./brinquedos.html">Brinquedos</a>
+          <a class="md" href="./decor.html">Decorações</a>
+          <a class="md" href="./combos.html">Combos festa</a>
+        </nav>
+      </div>
+      <section id="principal">
+        <img src="./assets/Principal.jpg" alt="" id="fundo" />
+      </section>
+      <div class="contato">
+      
+        
+        <a class="whatts" href="https://wa.me/554899323221" target="_blank">
+          
+        
+          <h4>Chame no Whatts</h4>
+        
+        
+        </a>
+        
+      </div>
+      
+  </body>
+  
+  <script>
+    document.querySelectorAll('.md').forEach(md => {
+      const principal = document.getElementById('principal')
+      md.onclick = function (e) {
+        e.preventDefault()
+        fetch(md)
+          .then(res => res.text())
+          .then(html => (principal.innerHTML = html))
+      }
+    })
+  </script>
+</html>

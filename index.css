@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+
+
+
+
+.container{
+
+  width: 100vw;
+  height: 100vh;
+
+}  
+
+.menu{
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+ padding: 20px;
+ background-image: linear-gradient(to right,rgb(4, 253, 224),rgb(135, 218, 192),rgb(104, 250, 155));
+}
+
+
+nav a {
+  
+  text-decoration:none; 
+  color:rgb(3, 3, 148);
+  background-color:rgb(104, 250, 155);
+  margin-right: 20px;
+  padding:9px;
+  border: 1px solid yellow;
+  border-radius:40px;
+  font-style:normal;
+  font-weight:500;
+  font-family: cursive;
+;}
+nav a:hover{
+  color:rgb(80, 159, 2);
+  padding:15px;
+  margin-right: 5px;
+  box-shadow: 5PX 5px 12px 5px rgb(255,217,0);
+}
+
+
+
+header h1{
+  color:rgb(255, 217, 0);
+  border-radius: 25px 100px 120px 125px;
+  font-size:50px;
+  font-style:normal;
+  font-weight:900;
+  background-image: linear-gradient(to left,rgb(4, 253, 224),rgb(117, 187, 165));
+  box-shadow: 20px 10px 25px 10px rgb(255, 217, 0);
+  padding: 0px 15px 0px 15px;
+  font-family: "Dancing Script", cursive;
+  
+}
+
+span{
+  
+color:rgb(3, 3, 148)
+}
+
+
+.contato{ 
+  height: 40px;
+  width: 150px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index:999 ;
+  display: flex;
+  flex-direction: column;
+  font-family:"Dancing script" , cursive;
+  font-size:large;
+  justify-content: center;
+  align-items: center;
+  background-color:#33cc00;
+  border-radius: 10px 10px 5px;
+  padding: 5px;
+  
+  animation:piscar 2s infinite;
+
+    
+  }
+  .contato:hover{
+    box-shadow: 5px 10px 25px 20px #33cc00;
+  }
+  
+@keyframes piscar{
+  0%{
+    background-color:#339900;
+    box-shadow: 15px 10px 25px 30px #7bf453;
+  }
+  50%{
+    background-color:#33cc00;
+    box-shadow: 5px 10px 25px 20px #33cc00;
+  }
+  100%{
+    background-color: #339900;
+    box-shadow: 15px 10px 25px 30px #7bf453;
+  }
+
+}
+
+.whatts{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color:white;
+  font-size:large;
+  text-decoration: none;
+  
+}
+
+
+#fundo{
+  height: 100vh;
+  width:100vw;
+  
+  }
+
+  @media(max-width:800px){
+    .menu{
+  
+  flex-direction: column;
+    }
+  nav a{
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    height:30%;
+    margin-right: 8px;
+  }
+
+  nav a:hover{
+    padding: 3px;
+    margin-right: 0;
+  }
+  
+
+    }
+  
